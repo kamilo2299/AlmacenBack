@@ -8,10 +8,10 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eduesqui</groupId>
-	<artifactId>spring-boot-h2-example</artifactId>
+	<groupId>com.accenture</groupId>
+	<artifactId>Almacen</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-h2-example</name>
+	<name>Almacen</name>
 	<description>Example H2 database</description>
 	<properties>
 		<java.version>1.8</java.version>
