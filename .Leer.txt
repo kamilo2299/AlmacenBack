@@ -1,6 +1,6 @@
 En este repositorio se encuentra la solución del reto de back. 
 En el proyecto existe un \src\main\resources hay un archivo data.sql donde estan los datos ingresados a la tabla. 
-Se utilizo "Postman" para probar estos servicios. 
+Se utilizo "Postman" para probar estos servicios. Los ultimos 3 servicios requieren que se envie un json con los datos, como se muestra a continuacion de cada una. 
 
 Los url para acceder al servidor serian los siguientes:
 
