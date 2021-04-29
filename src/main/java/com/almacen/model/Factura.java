@@ -2,6 +2,7 @@ package com.almacen.model;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,10 +38,13 @@ public class Factura implements Serializable{
 	@ManyToOne
 	Usuario user;
 	
+	LocalDateTime fecha;
+	
 	long precioSinIva;
 	long precioIva;
 	long precioDomicilio;
 	long precioTotal;
+	
 	
 	public Factura(){
 		productos = new ArrayList<Producto>();
@@ -48,6 +52,7 @@ public class Factura implements Serializable{
 		this.precioIva = 0;
 		this.precioDomicilio = 0;
 		this.precioTotal = 0;
+		this.fecha = LocalDateTime.now();
 	}
 
 	public long getId() {
@@ -110,8 +115,22 @@ public class Factura implements Serializable{
 		this.user = user;
 	}
 
-	
+	public LocalDateTime getFecha() {
+		return fecha;
+	}
 
+	public void setFecha(LocalDateTime fecha) {
+		this.fecha = fecha;
+	}
+
+	public void borrarElemento(Producto e) {
+		this.productos.remove(e);
+	}
+	
+	public void agregarElemento(Producto e) {
+		this.productos.add(e);
+	}
+	
 	
 	
 	

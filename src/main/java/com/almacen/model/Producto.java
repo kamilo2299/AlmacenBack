@@ -26,8 +26,8 @@ public class Producto implements Serializable{
 	long precio;
 
 	
-	Producto(){
-	
+	public Producto(){
+		this.precio = 0;
 	}
 	
 	public long getId() {

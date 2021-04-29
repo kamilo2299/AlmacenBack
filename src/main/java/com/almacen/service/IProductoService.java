@@ -12,6 +12,6 @@ public interface IProductoService {
 	public List<Producto> getProductos();
 	public Producto findProducto(long id);
 	public void crearProducto(Producto p);
-	public Factura calcularProducto(WrapperCompra idProductos);
+	public Factura calcularFactura(WrapperCompra idProductos);
 	
 }

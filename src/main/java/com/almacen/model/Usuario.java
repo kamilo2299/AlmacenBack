@@ -24,7 +24,8 @@ public class Usuario {
 	@Id
 	@GeneratedValue (strategy=GenerationType.IDENTITY)
 	long id;
-	
+	long valorpagar;
+
 	String cedula;
 	
 	String direccion;
@@ -33,10 +34,11 @@ public class Usuario {
 	@OneToMany
 	List<Factura> facturas;
 	
-
+	
 	
 	public Usuario(){
-		facturas = new ArrayList<Factura>();
+		this.facturas = new ArrayList<Factura>();
+		this.valorpagar = 0;
 	}
 
 
@@ -90,6 +92,26 @@ public class Usuario {
 	public void addFactura(Factura f) {
 		this.facturas.add(f);
 	}
+
+
+
+	public long getValorpagar() {
+		return valorpagar;
+	}
+
+
+
+	public void setValorpagar(long valorpagar) {
+		this.valorpagar = valorpagar;
+	}
+
+
+	public void borrarFactura(Factura a) {
+		this.facturas.remove(a);
+	}
+	
+
+
 
 	
 

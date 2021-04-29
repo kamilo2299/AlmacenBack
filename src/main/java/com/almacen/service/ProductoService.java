@@ -38,7 +38,7 @@ public class ProductoService implements IProductoService {
 		productosRepository.save(p);
 	}
 	
-	public Factura calcularProducto(WrapperCompra idProductos) {
+	public Factura calcularFactura(WrapperCompra idProductos) {
 		Factura fact = new Factura();
 		Usuario user;
 		user = this.buscarUsuario(idProductos.getCedula());

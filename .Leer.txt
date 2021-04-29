@@ -8,7 +8,7 @@ Los url para acceder al servidor serian los siguientes:
 - Get "http://localhost:7070/almacen/productos/{idProducto}": Mirar un producto en especifico
 - Get "http://localhost:7070/almacen/facturas/all": Mirar todos las facturas
 - Get "http://localhost:7070/almacen/facturas/{idProducto}": Mirar una factura especifica
-- Get "http://localhost:9090/almacen/usuarios/all": Mirar todos los usuarios
+- Get "http://localhost:7070/almacen/usuarios/all": Mirar todos los usuarios
 - Get "http://localhost:7070/almacen/facturas/{idProducto}": Mirar un usuario en especifico
 
 - Get "http://localhost:7070/almacen/calcular": Calcula la factura. Donde se envia la cedula y la direccion del usuario. Ademas de los ids de los productos. De no existir productos con esos ids o algun usuario con la misma cedula, no se crea la factura
@@ -23,7 +23,7 @@ Los url para acceder al servidor serian los siguientes:
     		"cedula": "159",
     		"direccion": "calle 18"
 	}
-- Post "http://localhost:9090/almacen/crear/producto": Crear producto
+- Post "http://localhost:7070/almacen/crear/producto": Crear producto
 	{
     		"nombre": "producto1",
 		"precio": 75000
