@@ -29,5 +29,11 @@ Los url para acceder al servidor serian los siguientes:
 		"precio": 75000
 	}
 	
-
+- Put "http://localhost:7070/almacen/editarFactura": Editar una factura. Donde los productos nuevos son aquellos productos que se agregaran a la factura. Los productos borrados son aquellos que se quitaran de la factura
+	{
+    		"idFactura": 1,
+    		"productosNuevos": [2],
+    		"productosBorrados": [1]
+	}
+- Delete "http://localhost:9090/almacen/borrarFactura/{idFactura}": Se borra la factura con el id indicado
 	
